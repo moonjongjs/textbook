@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+* { margin:0; padding:0; vertical-align:top; }
+html { overflow-y:scroll; } /* overflow-y:hidden; overflow-y:scroll; overflow-y:auto; overflow-x:scroll; overflow-x:auto; */
+html.addScroll { overflow:hidden; }  /* 스크롤바 없애기 */
+body { font:normal 14px/1 'Nanum Gothic','arial'; color:#626262; background:url(../img/restaurant-img7.jpg); }
+h1,h2,h3,h4,h5,h6 { font-size:14px; font-weight:normal; }
+i,em,address { font-style:normal; }
+strong, b { font-style:normal; }
+header, nav, aside, main, section, video, footer { display:block; }
+iframe { display:block; }
+ul, li { list-style:none; }
+a { color:#626262; text-decoration:none; /* underline(밑줄), overline(윗줄), none(없음) */ }
+input[type='text'] { width:100%; padding:12px; box-sizing:border-box; border:1px solid #ccc; }
+input[type='text']::placeholder { color:#ababab; }
+input[type='text']:focus  { outline:1px solid #666; }
+input[type='reset'], 
+input[type='button'],
+input[type='submit'] { width:auto; border:0; padding:0 20px; }
+select { height:45px; -webkit-appearance:none; appearance:none; border:1px solid #ccc; padding:12px; box-sizing:border-box;  }
+select:focus  { outline:1px solid #666; }
+textarea { resize:none; width:100%; border:1px solid #ccc; padding:12px; box-sizing:border-box; }
+textarea::placeholder { color:#ababab; }
+textarea:focus  { outline:1px solid #666; }
+.clearfix:after { content:''; display:block; clear:both; }
+.blind { text-indent:-2000px; overflow:hidden; display:block; }
+

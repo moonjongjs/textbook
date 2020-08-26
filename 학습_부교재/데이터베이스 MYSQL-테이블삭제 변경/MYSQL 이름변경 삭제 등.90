@@ -1,0 +1,337 @@
+Microsoft Windows [Version 10.0.18362.900]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+
+//////////////////////////////////////////////////////////////////
+//로그인
+
+C:\Users\TJ>mysql  -u root -p
+Enter password: *******
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 8
+Server version: 10.3.8-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+
+
+//////////////////////////////////////////////////////////////////
+//데이터 베이스 확인하기
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| db                 |
+| information_schema |
+| member             |
+| mysql              |
+| performance_schema |
++--------------------+
+5 rows in set (0.018 sec)
+
+
+
+
+
+//////////////////////////////////////////////////////////////////
+//데이터 베이스 사용하기
+
+MariaDB [(none)]> use member;
+Database changed
+
+
+MariaDB [member]> show tables;
++------------------+
+| Tables_in_member |
++------------------+
+| notice           |
++------------------+
+1 row in set (0.000 sec)
+
+
+//////////////////////////////////////////////////////////////////
+//데이터 베이스안에 테이이블 구조 확인하기
+
+MariaDB [member]> describe notice;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| idx      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| wclass   | varchar(10)  | NO   |     | NULL    |                |
+| wsubject | varchar(250) | NO   |     | NULL    |                |
+| wdate    | date         | YES  |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+4 rows in set (0.042 sec)
+
+
+
+//////////////////////////////////////////////////////////////////
+//데이터 베이스 만들기
+
+1. 데이터베이스 생성
+MariaDB [member]> create database member2;
+Query OK, 1 row affected (0.011 sec)
+
+
+2. 사용하기
+MariaDB [member]> use member2;
+Database changed
+
+3. 테이블만들기
+MariaDB [member2]> create table news(
+    -> idx int not null,
+    -> wclass varchar(10) not null,
+    -> wsubject varchar(250) not null,
+    -> wdate date not null,
+    -> primary key(idx)
+    -> );
+Query OK, 0 rows affected (0.144 sec)
+
+
+4. 테이블 구조 확인하기
+
+MariaDB [member2]> describe news;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| idx      | int(11)      | NO   | PRI | NULL    |       |
+| wclass   | varchar(10)  | NO   |     | NULL    |       |
+| wsubject | varchar(250) | NO   |     | NULL    |       |
+| wdate    | date         | NO   |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+4 rows in set (0.007 sec)
+
+
+5. 테이블 목록 보기
+
+MariaDB [member2]> show tables;
++-------------------+
+| Tables_in_member2 |
++-------------------+
+| news              |
++-------------------+
+1 row in set (0.000 sec)
+
+
+6. 성적 테이블 만들기
+MariaDB [member2]> create table sungjuk(
+    -> idx int not null auto_increment,
+    -> name varchar(50) not null,
+    -> kor int not null,
+    -> eng int not null,
+    -> mat int not null,
+    -> primary key(idx)
+    -> );
+Query OK, 0 rows affected (0.176 sec)
+
+
+7. 테이블 목록 보기
+
+MariaDB [member2]> show tables;
++-------------------+
+| Tables_in_member2 |
++-------------------+
+| news              |
+| sungjuk           |
++-------------------+
+2 rows in set (0.000 sec)
+
+
+8. 성적 테이블 구조 확인하기
+
+MariaDB [member2]> describe sungjuk;
++-------+-------------+------+-----+---------+----------------+
+| Field | Type        | Null | Key | Default | Extra          |
++-------+-------------+------+-----+---------+----------------+
+| idx   | int(11)     | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(50) | NO   |     | NULL    |                |
+| kor   | int(11)     | NO   |     | NULL    |                |
+| eng   | int(11)     | NO   |     | NULL    |                |
+| mat   | int(11)     | NO   |     | NULL    |                |
++-------+-------------+------+-----+---------+----------------+
+5 rows in set (0.007 sec)
+
+
+9. 데이터베이스 목록 보기
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| member             |
+| member2            |
+| mysql              |
+| performance_schema |
++--------------------+
+5 rows in set (0.001 sec)
+
+
+
+10. 데이터베이스 사용하기
+
+MariaDB [(none)]> use member
+Database changed
+
+
+11. 테이블 목록 보기
+MariaDB [member]> show tables;
++------------------+
+| Tables_in_member |
++------------------+
+| notice           |
++------------------+
+1 row in set (0.001 sec)
+
+
+12. 테이블 구조 확인하기
+
+MariaDB [member]> desc notice;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| idx      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| wclass   | varchar(10)  | NO   |     | NULL    |                |
+| wsubject | varchar(250) | NO   |     | NULL    |                |
+| wdate    | date         | YES  |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+4 rows in set (0.006 sec)
+
+
+
+MariaDB [member]> use member2;
+Database changed
+
+
+
+MariaDB [member2]> show tables;
++-------------------+
+| Tables_in_member2 |
++-------------------+
+| news              |
+| sungjuk           |
++-------------------+
+2 rows in set (0.000 sec)
+
+
+
+
+MariaDB [member2]> desc news;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| idx      | int(11)      | NO   | PRI | NULL    |       |
+| wclass   | varchar(10)  | NO   |     | NULL    |       |
+| wsubject | varchar(250) | NO   |     | NULL    |       |
+| wdate    | date         | NO   |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+4 rows in set (0.006 sec)
+
+
+
+
+
+13.
+news 테이블 auto_increment 넣기(idx 변경하기)
+/////////////////////////////////////////////////////////////////////////
+
+MariaDB [member2]> alter table news modify idx int not null auto_increment;
+Query OK, 0 rows affected, 2 warnings (0.663 sec)
+Records: 0  Duplicates: 0  Warnings: 2
+
+
+
+
+MariaDB [member2]> desc news;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| idx      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| wclass   | varchar(10)  | NO   |     | NULL    |                |
+| wsubject | varchar(250) | NO   |     | NULL    |                |
+| wdate    | date         | NO   |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+4 rows in set (0.007 sec)
+
+
+
+
+14. 테이블 이름 바꾸기
+
+MariaDB [member2]> rename table news to newstable;
+Query OK, 0 rows affected (0.155 sec)
+
+MariaDB [member2]> show tables;
++-------------------+
+| Tables_in_member2 |
++-------------------+
+| newstable         |
+| sungjuk           |
++-------------------+
+2 rows in set (0.000 sec)
+
+
+
+MariaDB [member2]> show tables;
++-------------------+
+| Tables_in_member2 |
++-------------------+
+| newstable         |
+| sungjuk           |
++-------------------+
+2 rows in set (0.001 sec)
+
+
+
+
+MariaDB [member2]> desc sungjuk;
++-------+-------------+------+-----+---------+----------------+
+| Field | Type        | Null | Key | Default | Extra          |
++-------+-------------+------+-----+---------+----------------+
+| idx   | int(11)     | NO   | PRI | NULL    | auto_increment |
+| name  | varchar(50) | NO   |     | NULL    |                |
+| kor   | int(11)     | NO   |     | NULL    |                |
+| eng   | int(11)     | NO   |     | NULL    |                |
+| mat   | int(11)     | NO   |     | NULL    |                |
++-------+-------------+------+-----+---------+----------------+
+5 rows in set (0.007 sec)
+
+
+
+15. 테이블 삭제하기
+
+
+MariaDB [member2]> drop table sungjuk;
+Query OK, 0 rows affected (0.104 sec)
+
+MariaDB [member2]> show tables;
++-------------------+
+| Tables_in_member2 |
++-------------------+
+| newstable         |
++-------------------+
+1 row in set (0.000 sec)
+
+
+
+
+16. 데이터베이스 삭제하기
+
+MariaDB [member2]> drop database member2;
+Query OK, 1 row affected, 2 warnings (0.133 sec)
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| member             |
+| mysql              |
+| performance_schema |
++--------------------+
+4 rows in set (0.001 sec)
+
+MariaDB [(none)]>

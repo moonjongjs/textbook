@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+#section1 { padding:100px 0; }
+#section1 div { width:100%; text-align:center; }
+#section1 div ul { display:inline-block; }
+#section1 div ul li { float:left; width:400px; height:400px; }
+#section1 div ul li div { width:100%;  height:100%; }
+#section1 div ul li div svg { width:100%; height:100%; }
+#section1 div ul li div svg circle         { r:195px; cx:50%; cy:50%; stroke-width:10px; }
+#section1 div ul li div svg circle#circle1 { fill:url(#gradient1); stroke:#ccc;  }
+#section1 div ul li div svg circle#circle2 { fill:url(#gradient2); stroke:#ccc;  }
+#section1 div ul li div svg circle#circle3 { fill:url(#gradient3); stroke:#ccc;  }
+#section1 div ul li div svg circle#circle4 { fill:url(#gradient4); stroke:#ccc;  }

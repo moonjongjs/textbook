@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('fonts.css');
+
+
+/*//////////////*/
+/*/  링컨자동차   /*/
+/*////////////*/
+
+
+.slide-container {  position:relative; width:100%; max-width:1438px; margin:0 auto; }
+.slide-container .slide-view { z-index:1; position:relative; width:100%; overflow:hidden; }
+.slide-container .slide-view .slide-wrap { position:relative; left:0; width:calc(1438px*7); margin-left:-1438px; }
+.slide-container .slide-view .slide-wrap .slide { float:left; width:100%; max-width:1438px; }
+.slide-container .slide-view .slide-wrap .slide div { width:100%; }
+.slide-container .slide-view .slide-wrap .slide div img { width:100%; }
+
+/* 다음, 이전 화살버튼 */
+.arrowBtn-wrap { z-index:2; position:absolute; top:50%; right:0; width:70px; height:140px; margin-top:-70px; }
+.arrowBtn-wrap li { width:70px; height:70px; }
+.arrowBtn-wrap li:first-child a { opacity:.7; transition:all 0.3s; position:relative; display:block; width:70px; height:70px; background:rgba(180,70,20, 1); }
+.arrowBtn-wrap li:last-child  a { opacity:.7; transition:all 0.3s; position:relative; display:block; width:70px; height:70px; background:rgba(0,0,0, 1); }
+.arrowBtn-wrap li:first-child a i { transition:all 0.3s; position:absolute; top:20px; left: 10px; display:block; width:30px; height:30px; border-top:1px solid #fff; border-right:1px solid #fff; transform:rotate( 45deg); }
+.arrowBtn-wrap li:last-child  a i { transition:all 0.3s; position:absolute; top:20px; right:10px; display:block; width:30px; height:30px; border-top:1px solid #fff; border-left:1px solid #fff;  transform:rotate(-45deg); }
+
+.arrowBtn-wrap li             a:hover { opacity:1;  background:rgba(255,255,255, 1);  }
+.arrowBtn-wrap li             a:hover i { border-color:#000; }
+
+
+
+/* 페이지버튼(인디게이트버튼===롤링버튼===네비게이션버튼) : 슬라이드의 위치를 알려주는 버튼 표시 */
+.pageBtn-wrap { z-index:2; position:absolute; bottom:7%; left:0; width:100%; height:20px; text-align:center; }
+.pageBtn-wrap li { transition:all 0.3s; display:inline-block; width:10px; height:10px; margin:0 12px; }
+.pageBtn-wrap li a { transition:all 0.3s; border-radius:50%; display:block; width:100%; height:100%; background:rgba(255,255,255,1);  }
+/* current slide page button mark 버튼모양 변경 */
+.pageBtn-wrap li.addPageBtn { transform:scale(2,2);  }
+.pageBtn-wrap li.addPageBtn a { background:rgba(255,255,255,0); border:1px solid #fff; margin-top:-1px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

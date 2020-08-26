@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* 초기화 스타일 reset.css */
+* { padding:0; margin:0; }
+html, body { width:100%; height:100%; }
+html { overflow-y:scroll; }
+html.addScroll { overflow:hidden; }
+body { font:normal 14px/1 'Roboto','sans-serif';  -webkit-text-size-adjust:100%; text-size-adjust:100%; color:#626262; background:url(../img/restaurant-img7.jpg); word-wrap:break-word; }
+header,main,footer,section,article,nav,aside { display:block; }
+h1,h2,h3,h4,h5,h6 { font-family:'Montserrat'; font-size:14px;  font-weight:normal; }
+i,em,address { font-style:normal; }
+img { vertical-align:top; }
+a { display:inline-block; text-decoration:none; color:#626262;  }
+a:focus { outline:1px solid rgba(200,200,200, .4); outline-offset:5px; }
+ul,li { list-style:none; }
+
+select,
+input[type='text'], 
+input[type='submit'],
+input[type='button'],
+input[type='reset'], 
+input[type='radio'],
+input[type='checkbox']{ padding:0 15px; color:#919191; box-sizing:border-box; -webkit-appearance:none; box-sizing:border-box; appearance:none; box-shadow:none; text-shadow:none; border-radius:0; border:2px solid #ddd; background:#fff; width:100%; height:47px; }
+
+input[type='submit'],
+input[type='button'],
+input[type='reset'], 
+input[type='radio'],
+input[type='checkbox']{ cursor:pointer; width:auto; height:auto; padding:0 20px;}
+
+select { outline:0; background:transparent; }
+textarea { color:#919191; resize:none; padding:15px; box-sizing:border-box; -webkit-appearance:none; appearance:none; box-shadow:none; text-shadow:none; border-radius:0; border:2px solid #ddd; background:#fff; width:100%; height:100px; }
+
+.clearfix:after { content:''; display:block; clear:both; }
+.hidden { display:none; }
+.blind { display:block; text-indent:-2000px; overflow:hidden; }
+#skip { z-index:4; position:absolute; top:0; left:0; width:100%; }
+#skip li { width:100%; }
+#skip li a { display:block; font-size:0; padding:0; text-align:center; color:#fff; background:#222; }
+#skip li a:focus { font-size:18px; padding:15px 0; }
+

@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+#wrap { width:100%; overflow: hidden; }
+
+#address { width:100%; }
+#address > div { width:100%; padding-top: 50px; }
+#address > div  .container { width:100%; max-width: 800px; margin: 0 auto; border:1px solid #ccc; background-color: #f9f9f9; padding: 50px; }
+
+#address > div  .container h2 { text-align: center; font-size:30px; font-weight: :600; padding-bottom:50px; }
+#address > div  .container form { width:100%; text-align: center; border:0; }
+#address > div  .container form ul { margin: 0 50px; }
+#address > div  .container form ul li { padding: 10px 0; }
+#address > div  .container form ul li div { width:100%; }
+#address > div  .container form ul li div input  { width:100%; border:1px solid #ddd; }
+#address > div  .container form ul li div input::placeholder  { color:#aaa; }
+#address > div  .container form ul li div input:focus  { outline: 1px solid #aaa; }
+#address > div  .container form button { margin-top: 50px; display: inline-block; width:200px; background-color: #ddd; height: 50px; color:#000; font-size: 18px; border:0; }

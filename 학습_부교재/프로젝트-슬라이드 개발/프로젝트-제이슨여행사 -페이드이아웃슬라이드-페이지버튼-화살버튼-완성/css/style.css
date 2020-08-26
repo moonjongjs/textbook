@@ -1,0 +1,51 @@
+@charset "utf-8";
+@import url('reset.css');
+@import url('fonts.css');
+
+#header { z-index:3; position:fixed; top:0; left:0; width:100%; height:125px; background:rgba(255,255,255, 0); }
+#header > div { width:100%; max-width:1530px; height:125px; background:#99c; margin:0 auto; }
+
+#main { z-index:1; position:relative; }
+
+#main #section1 { z-index:1; position:fixed; top:0; left:0; width:100%; }
+#main #section1 > div { width:100%; }
+#main #section1 > div .main-slide-container {  position:relative;  width:100%; }
+#main #section1 > div .main-slide-container .main-slide-view { z-index:1; position:relative;  width:100%; }
+#main #section1 > div .main-slide-container .main-slide-view .main-slide-wrap { position:relative; left:0;  width:100%; height:969px; /* 창높이 */ }
+#main #section1 > div .main-slide-container .main-slide-view .main-slide-wrap .mainSlide  { z-index:1; position:absolute; top:0; left:0; width:100%; height:969px; /* 창높이 */  }
+#main #section1 > div .main-slide-container .main-slide-view .main-slide-wrap .mainSlide0 { z-index:2; }
+#main #section1 > div .main-slide-container .main-slide-view .main-slide-wrap .mainSlide  > div { position:relative; width:100%; height:969px; /* js 창높이 */ }          
+#main #section1 > div .main-slide-container .main-slide-view .main-slide-wrap .mainSlide0 > div { background:url(../img/mainSlide0.jpg) no-repeat 50% 50%; background-size:cover; } 
+#main #section1 > div .main-slide-container .main-slide-view .main-slide-wrap .mainSlide1 > div { background:url(../img/mainSlide1.jpg) no-repeat 50% 50%; background-size:cover; } 
+#main #section1 > div .main-slide-container .main-slide-view .main-slide-wrap .mainSlide2 > div { background:url(../img/mainSlide2.jpg) no-repeat 50% 50%; background-size:cover; } 
+#main #section1 > div .main-slide-container .main-slide-view .main-slide-wrap .mainSlide  > div .main-slide-title {  z-index:2;  position:absolute; top:50%; left:0; width:100%; text-align:center; margin-top:-56px; /*js*/ }
+#main #section1 > div .main-slide-container .main-slide-view .main-slide-wrap .mainSlide  > div .main-slide-title h3 { font-size:24px; color:#fff; padding-bottom:20px; font-weight:600; }
+#main #section1 > div .main-slide-container .main-slide-view .main-slide-wrap .mainSlide  > div .main-slide-title h2 { font-size:68px; color:#fff;  font-weight:700; }
+
+/* 화살버튼 박스 */
+#main #section1 > div .main-slide-container .arrow-wrap { z-index:2; position:absolute; top:50%; left:50%; width:100%; max-width:1530px; margin-left:-765px; height:100px; margin-top:-50px; }
+#main #section1 > div .main-slide-container .arrow-wrap span.nextBtn-wrap { position:absolute; top:0; right:0; display:block; width:52px; height:100px; }
+#main #section1 > div .main-slide-container .arrow-wrap span.nextBtn-wrap a { display:block; width:52px; height:100px; background:url(../img/visu_slick_next.png) no-repeat 50% 50%; }
+#main #section1 > div .main-slide-container .arrow-wrap span.prevBtn-wrap { position:absolute; top:0; left:0; display:block; width:52px; height:100px; }
+#main #section1 > div .main-slide-container .arrow-wrap span.prevBtn-wrap a { display:block; width:52px; height:100px; background:url(../img/visu_slick_prev.png) no-repeat 50% 50%;}
+
+/* 페이지버튼 박스 */
+#main #section1 > div .main-slide-container .pageBtn-wrap { z-index:2; position:absolute; bottom:10%; left:0; text-align:center; width:100%; height:12px;  }
+#main #section1 > div .main-slide-container .pageBtn-wrap li { display:inline-block; width:12px; height:12px; margin:0 7px; }
+#main #section1 > div .main-slide-container .pageBtn-wrap li a.pageBtn { display:block; width:12px; height:12px; background:rgba(0,0,0, .5); border-radius:50%; }
+#main #section1 > div .main-slide-container .pageBtn-wrap li a.pageBtn.addPage { background:rgb(111,24,78); /*#6f184e*/  }
+
+
+
+#main #section2 { margin-top:969px;/* 반응형에서 js로 창높이설정 */ z-index:2; position:relative; width:100%; height:800px; background:#c99; }
+#main #section2 > div { }
+
+#main #section3 { z-index:2; position:relative; width:100%; height:800px; background:#c9c; }
+#main #section3 > div { }
+
+#main #section4 { z-index:2; position:relative; width:100%; height:800px; background:#99c; }
+#main #section5 > div { }
+
+#footer { z-index:2; position:relative;  width:100%; height:500px; background:#303030;  }
+#footer > div { }
+

@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+
+
+@media all and (max-width:1580px){
+	#main #moripCollection ul li div { margin:15px; }	
+	.wrap .gap { margin:0 15px; }
+
+	#main #mainSlide .mainSlide-container .title { margin-top:-42px;  }
+	#main #mainSlide .mainSlide-container .title h3 { font-size:20px; padding-bottom:6px; }
+	#main #mainSlide .mainSlide-container .title h2 { font-size:58px; }
+	
+}
+
+
+
+@media all and (max-width:1280px){
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right { width:46%; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div { padding-top:10%; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h2 { font-size:22px; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h3 { font-size:15px; padding:10px 0 20px 0; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div p  { font-size:13px; line-height:150%;}
+	
+	#footer .row1   ul li { width:33.333%; }
+	#footer .row1   ul li div { margin:0 10px; }
+	#footer .row1   ul li div a { height:100px; }	
+	#footer .row1   ul li:nth-child(1) div a { background-size:60% auto; }
+	#footer .row1   ul li:nth-child(2) div a { background-size:60% auto; }
+	#footer .row1   ul li:nth-child(3) div a { background-size:60% auto; }
+	#footer .row1   ul li:nth-child(4) div a { background-size:60% auto; }
+	#footer .row1   ul li:nth-child(5) div a { background-size:60% auto; }
+	#footer .row1   ul li:nth-child(6) div a { background-size:60% auto; }
+
+	
+	
+	#footer .row2 { padding:60px 0;  }
+	#footer .row2 .container ul { width:auto; padding:0 30px; }	
+	
+}
+
+
+@media all and (max-width:1024px){
+	
+	#header ,
+	#header .container { height:84px; }	
+	#header .logo { top:23px; margin-left:-68.5px; width:137px; height:38px; }
+	#header .appBar { padding:33.5px 0; }
+	#header .appBar a > span:first-child { width:27px; height:17px; }
+	#header .appBar a > span:last-child  { display:none; }
+	#header          .appBar a > span i.appBarLine { height:2px; }
+	#header          .appBar a.addAppbar > span i.appBarLine0 { margin-top:-1px; }
+	#header          .appBar a > span i.appBarLine1 {  margin-top:-1px; }
+	#header          .appBar a.addAppbar > span i.appBarLine2 { margin-bottom:-1px; }
+	#header .aside ul {  padding:23.5px 0;  }	
+	#header .aside ul li:first-child { display:none; }
+
+	#header .gnb nav > ul > li > div > a { font-size:17px; padding:0 20px; }
+
+	#header .gnb nav > ul > li > div > .sub > div ul li div { padding:0 3px; }
+	#header .gnb nav > ul > li > div > .sub > div ul li div a { font-size:15px; }
+
+	
+	
+	#main #moripCollection ul li { width:50%; }	
+	#main #moripCollection ul li div { margin:6px; }	
+	.wrap .gap { margin:0 10px; }	
+	
+	#main #mainSlide .mainSlide-container .arrow        ,
+	#main #mainSlide .mainSlide-container .pageBtn-wrap ,
+	#main #mainSlide .mainSlide-container .next         { display:none; }	
+
+	#main #mainSlide .mainSlide-container .title { margin-top:-33px;  }
+	#main #mainSlide .mainSlide-container .title h3 { font-size:15px; padding-bottom:3px; }
+	#main #mainSlide .mainSlide-container .title h2 { font-size:48px; }
+	
+	#main #TravelLounge .content .s4Slide-container .s4Slide-view .s4Slide-wrap .s4Slide  > div .s4Slide-content > div .border i:nth-child(1) { height:3px; }
+	#main #TravelLounge .content .s4Slide-container .s4Slide-view .s4Slide-wrap .s4Slide  > div .s4Slide-content > div .border i:nth-child(2) { width: 3px; }
+	#main #TravelLounge .content .s4Slide-container .s4Slide-view .s4Slide-wrap .s4Slide  > div .s4Slide-content > div .border i:nth-child(3) { height:3px; }
+	#main #TravelLounge .content .s4Slide-container .s4Slide-view .s4Slide-wrap .s4Slide  > div .s4Slide-content > div .border i:nth-child(4) { width: 3px; }	
+
+	#footer .row1   ul li { width:33.333%; }
+	#footer .row1   ul li div { margin:10px 10px; }
+	#footer .row1   ul li div a { height:80px; }	
+	#footer .row1   ul li:nth-child(1) div a { background-size:70% auto; }
+	#footer .row1   ul li:nth-child(2) div a { background-size:70% auto; }
+	#footer .row1   ul li:nth-child(3) div a { background-size:70% auto; }
+	#footer .row1   ul li:nth-child(4) div a { background-size:70% auto; }
+	#footer .row1   ul li:nth-child(5) div a { background-size:70% auto; }
+	#footer .row1   ul li:nth-child(6) div a { background-size:70% auto; }
+
+	
+	
+	#footer .row2 { padding:50px 0;  }
+	#footer .row2 .container ul { width:auto; padding:0 30px; }	
+		
+	#footer .row2 .container ul li { float:none;  text-align:center;  }
+	#footer .row2 .container ul li:first-child { width:100%; }	
+	#footer .row2 .container ul li:last-child  { width:100%; }
+
+	#footer .row2 .container ul li:first-child h1 { padding-bottom:40px; }
+	#footer .row2 .container ul li:first-child h1 a img { width:100%; max-width:150px; }
+
+	#footer .row2 .container ul li:last-child > div div span:nth-child(1) { float:none; display:inline-block; padding-bottom:10px; }
+	#footer .row2 .container ul li:last-child > div div span:nth-child(1) a { margin:0 15px; }
+	#footer .row2 .container ul li:last-child > div div span:nth-child(1) a:first-child { margin-left:0; }
+	#footer .row2 .container ul li:last-child > div div span:nth-child(1) a:last-child  { margin-right:0; }
+
+	#footer .row2 .container ul li:last-child > div div span:nth-child(3) { float:none;  display:inline-block; padding-bottom:10px; }
+	#footer .row2 .container ul li:last-child > div div span:nth-child(3) a { margin:0 15px; }
+	#footer .row2 .container ul li:last-child > div div span:nth-child(3) a:first-child { margin-left: 0; }
+	#footer .row2 .container ul li:last-child > div div span:nth-child(3) a:last-child  { margin-right:0; }
+
+	#footer .row2 .container ul li:last-child > div div span a { color:#fff; font-size:14px; }
+	#footer .row2 .container ul li:last-child > div div p { display:block; padding:15px 0; }
+	#footer .row2 .container ul li:last-child > div address  { font-size:12px; line-height:150%; padding-top:20px; }
+	#footer .row2 .container ul li:last-child > div address span { display:block; }
+	#footer .row2 .container ul li:last-child > div address span br { display:block; }
+		
+}
+
+
+
+
+@media all and (max-width:900px){ /* 780px 이하이면 */
+	#header ,
+	#header .container { height:60px; }
+	#header .logo { top:18px; margin-left:-43.5px; width:87px; height:24px; }	
+	#header .appBar { padding:21.5px 0; }
+	#header .aside ul {  display:none;  }
+	#header .aside .hotel { display:block; }
+	#header .wrap .gap { margin-right:0; }	
+
+	
+	#header .gnb { top:-5px; height:auto;  }
+	#header .gnb .wrap .gap { margin:0; }	
+	#header .gnb .container { height:auto; }
+
+	#header .gnb nav > ul { display:block; padding:20px 0; }
+	#header .gnb nav > ul > li { display:block; }	
+	#header .gnb nav > ul > li > div { padding:8px 0; }
+	#header .gnb nav > ul > li > div > a { font-size:18px; line-height:100%; padding:0; }
+	#header .gnb nav > ul > li > div > a:hover { color:#fff; background:transparent; }
+
+	#header .gnb nav > ul > li > div > .sub { display:block; position:relative; top:0; left:0; width:100%; height:auto; background:transparent; }
+	#header .gnb nav > ul > li > div > .sub > div { padding:15px 0 0 0; }	
+	#header .gnb nav > ul > li > div > .sub > div ul li { display:block; }	
+	#header .gnb nav > ul > li > div > .sub > div ul li div { padding:3px 0; }
+	#header .gnb nav > ul > li > div > .sub > div ul li div a { font-size:16px; padding-bottom:0; color:#aaa; }
+	#header .gnb nav > ul > li > div > .sub > div ul li div a:hover { color:#fff; }
+	#header .gnb nav > ul > li > div > .sub > div ul li:nth-child(even) { display:none; }
+	
+}
+
+/* 해상도가 780px 이하이면서(그리고 and ), 폰방향이 가로방향 인경우에는 .gnb 높이를 300으로 설정 */
+/* js window.orientation: 90 또는 -90  :가로방향 landscape 랜드스케이프 */
+/* js window.orientation: 0 또는 180  :가로방향 portrait 포트레이트 */
+@media all and (max-width:900px) and (orientation:landscape) {
+	#header .gnb { height:auto;  overflow-y:scroll; }
+}	
+
+
+@media all and (max-width:760px){
+	
+	#main #moripCollection,
+	#main #moripKorea,
+	#main #TravelLounge { padding:30px 0; }
+
+	.content-title { padding:40px 0; }
+	.content-title h2 { font-size:30px; }
+	.content-title h3 { padding-top:7px; }
+	.content-title h4 { padding-top:10px; font-size:14px; }
+	
+	#main #moripKorea .content-title { padding-bottom:90px; }	
+	
+	#main #moripKorea .content { border:2px solid #6f184e; }	
+
+	#main #moripKorea .content .s3Slide-container .s3Slide-view { width:100%; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li.s3Slide  > div .s3Slide-left  { left:10px; }
+
+	
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right { width:48%; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div { padding-top:10%; padding-right:10px; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h2 { font-size:20px; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h3 { font-size:14px; padding:7px 0 15px 0; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div p  { font-size:12px; line-height:140%;}
+
+	#main #moripKorea .arrow { transform:scale(.8); bottom:-4.1px; right:-8.2px; } 	
+	#main #moripKorea .pageImageBtn-wrap { display:none; }	
+	
+	#main #TravelLounge .content .s4Slide-container .s4Slide-view .s4Slide-wrap .s4Slide  > div .s4Slide-content > div .border i:nth-child(1) { height:2px; }
+	#main #TravelLounge .content .s4Slide-container .s4Slide-view .s4Slide-wrap .s4Slide  > div .s4Slide-content > div .border i:nth-child(2) { width: 2px; }
+	#main #TravelLounge .content .s4Slide-container .s4Slide-view .s4Slide-wrap .s4Slide  > div .s4Slide-content > div .border i:nth-child(3) { height:2px; }
+	#main #TravelLounge .content .s4Slide-container .s4Slide-view .s4Slide-wrap .s4Slide  > div .s4Slide-content > div .border i:nth-child(4) { width: 2px; }	
+	
+	#footer .row1   ul li { width:33.333%; }
+	#footer .row1   ul li div { margin:10px 10px; }
+	#footer .row1   ul li div a { height:80px; }	
+	#footer .row1   ul li:nth-child(1) div a { background-size:70% auto; }
+	#footer .row1   ul li:nth-child(2) div a { background-size:70% auto; }
+	#footer .row1   ul li:nth-child(3) div a { background-size:70% auto; }
+	#footer .row1   ul li:nth-child(4) div a { background-size:70% auto; }
+	#footer .row1   ul li:nth-child(5) div a { background-size:70% auto; }
+	#footer .row1   ul li:nth-child(6) div a { background-size:70% auto; }
+
+		
+	
+}
+
+@media all and (max-width:600px){
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right { width:48%; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div { padding-top:10%; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h2 { font-size:20px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h3 { font-size:14px; padding:7px 0 15px 0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div p  { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+
+	#footer .row1   ul li { width:33.333%; }
+	#footer .row1   ul li div { margin:10px 10px; }
+	#footer .row1   ul li div a { height:60px; }	
+	#footer .row1   ul li:nth-child(1) div a { background-size:80% auto; }
+	#footer .row1   ul li:nth-child(2) div a { background-size:80% auto; }
+	#footer .row1   ul li:nth-child(3) div a { background-size:80% auto; }
+	#footer .row1   ul li:nth-child(4) div a { background-size:80% auto; }
+	#footer .row1   ul li:nth-child(5) div a { background-size:80% auto; }
+	#footer .row1   ul li:nth-child(6) div a { background-size:80% auto; }
+
+	
+	
+}
+
+	
+	
+@media all and (max-width:500px){
+	
+	#main #moripCollection,
+	#main #moripKorea,
+	#main #TravelLounge { padding:20px 0; }
+
+	.content-title { padding:30px 0; }
+	.content-title h2 { font-size:28px; }
+	.content-title h3 { padding-top:5px; }
+	.content-title h4 { padding-top:8px; font-size:13px; }
+	#main #moripKorea .content-title { padding-bottom:60px; }	
+
+	
+	
+	
+	#main #moripCollection ul li { width:100%; }
+	#main #moripCollection ul li div { margin:5px 10px; }	
+	.wrap .gap { margin:0 10px; }		
+	
+	#main #mainSlide .mainSlide-container .title { margin-top:-24px;  }
+	#main #mainSlide .mainSlide-container .title h3 { font-size:11px; padding-bottom:3px; }
+	#main #mainSlide .mainSlide-container .title h2 { font-size:33px; }
+
+	#main #TravelLounge .content .s4Slide-container .s4Slide-view .s4Slide-wrap .s4Slide  > div { margin:10px; }	
+	
+	#footer .row1   ul li { width:50%; }
+	#footer .row1   ul li div { margin:10px 10px; }
+	#footer .row1   ul li div a { height:40px; }	
+	#footer .row1   ul li:nth-child(1) div a { background-size:80% auto; }
+	#footer .row1   ul li:nth-child(2) div a { background-size:80% auto; }
+	#footer .row1   ul li:nth-child(3) div a { background-size:80% auto; }
+	#footer .row1   ul li:nth-child(4) div a { background-size:80% auto; }
+	#footer .row1   ul li:nth-child(5) div a { background-size:80% auto; }
+	#footer .row1   ul li:nth-child(6) div a { background-size:80% auto; }
+
+	
+	#footer .row2 { padding:40px 0;  }
+	#footer .row2 .container ul { width:auto; padding:0 10px; }	
+		
+	#footer .row2 .container ul li { float:none;  text-align:center;  }
+	#footer .row2 .container ul li:first-child { width:100%; }	
+	#footer .row2 .container ul li:last-child  { width:100%; }
+
+	#footer .row2 .container ul li:first-child h1 { padding-bottom:30px; }
+	#footer .row2 .container ul li:first-child h1 a img { width:100%; max-width:130px; }
+
+	#footer .row2 .container ul li:last-child > div div span:nth-child(1) { float:none; display:inline-block; padding-bottom:7px; }
+	#footer .row2 .container ul li:last-child > div div span:nth-child(1) a { margin:0 10px; }
+	#footer .row2 .container ul li:last-child > div div span:nth-child(1) a:first-child { margin-left:0; }
+	#footer .row2 .container ul li:last-child > div div span:nth-child(1) a:last-child  { margin-right:0; }
+
+	#footer .row2 .container ul li:last-child > div div p { display:block; padding:15px 0; }
+	
+	#footer .row2 .container ul li:last-child > div div span:nth-child(3) { float:none;  display:inline-block; padding-bottom:7px; }
+	#footer .row2 .container ul li:last-child > div div span:nth-child(3) a { margin:0 10px; }
+	#footer .row2 .container ul li:last-child > div div span:nth-child(3) a:first-child { margin-left: 0; }
+	#footer .row2 .container ul li:last-child > div div span:nth-child(3) a:last-child  { margin-right:0; }
+
+	#footer .row2 .container ul li:last-child > div div span a { color:#fff; font-size:13px; }
+	
+	#footer .row2 .container ul li:last-child > div address  { font-size:11px; line-height:150%; padding-top:15px; }
+	#footer .row2 .container ul li:last-child > div address span { display:block; }
+	#footer .row2 .container ul li:last-child > div address span br { display:block; }
+	
+	
+	
+}

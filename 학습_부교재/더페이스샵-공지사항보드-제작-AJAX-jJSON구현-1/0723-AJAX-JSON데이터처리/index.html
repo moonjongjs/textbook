@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>더페이스샵 AJAX 공지사항</title>
+	<meta charset='utf-8'>
+	<meta name='Viewport'    content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0'>
+	<meta name='Title'       content='더페이스샵 AJAX 공지사항'>
+	<meta name='Subject'     content='더페이스샵 AJAX 공지사항'>
+	<meta name='format-detection' content='telephone=no'>	
+	<meta name='Publisher'   content='교사문선종'>
+	<meta name='Keywords'    content='더페이스샵 AJAX 공지사항 인트로사이트'>
+	<meta name='Description' content='더페이스샵 AJAX 공지사항 웹표준, 웹접근, 크로스브라우징, 반응형웹사이트'>
+	<meta name='Author'      content='BRANDO'>
+	<meta name='Author-Date' content='2020-07-23'>
+	<meta name='Copyright'   content='더페이스샵 AJAX 공지사항'>
+	<meta name='Robots'      content='index,follow'>
+	
+	
+	<link rel='stylesheet' type='text/css' href='./css/reset.css'>
+	<link rel='stylesheet' type='text/css' href='./css/fonts.css'>
+	<link rel='stylesheet' type='text/css' href='./css/style.css'>
+	<link rel='stylesheet' type='text/css' href='./css/response.css'>
+	
+	
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.js'></script>
+	<!-- <script src='./js/lib/prefixfree.min.js'></script> -->
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 
+	 
+	 
+</head>
+<body>
+<div id='wrap'>
+	
+	<ul id='skip'>
+		<li><a href='#header'>메뉴바로가기</a></li>
+		<li><a href='#main'>메인바로가기</a></li>
+		<li><a href='#footer'>하단바로가기</a></li>
+	</ul>
+
+
+	<header id='header'>
+		<aside>
+		
+		</aside>
+		<div>
+		
+		</div>
+		<nav>
+			
+		</nav>
+	</header>
+	<main id='main'>
+	
+		<section id='notice'>
+			<div>
+					<div class='notice-title'>
+						<h2><img src='img/tit_notice.png' alt='Notice Title'></h2>						
+					</div>	
+					<div  class='notice-title-double-line'>
+						<p></p>
+					</div>
+					<nav class='noticeBt-wrap'>
+						<ul>
+							<li><div><a href='javascript:' class='noticeBt addNav' title='전체공지'>전체공지</a></div></li>
+							<li><div><a href='javascript:' class='noticeBt' title='쇼핑공지'>쇼핑공지</a></div></li>
+							<li><div><a href='javascript:' class='noticeBt' title='브랜드소식'>브랜드소식</a></div></li>
+						</ul>
+					</nav>
+					
+					<div class='notice-board'>
+						<ul>
+					
+							<li class='clearfix'>
+								<span>번호</span>
+								<span>구분</span>
+								<span>제목</span>	
+								<span>날짜</span>
+							</li>
+							
+							<li>
+								<ul class='noticeBoard'>
+									
+									<!-- AJAX 데이터 바인딩 -->
+									
+									
+								</ul>								
+							</li>
+						</ul>
+					
+						<script src='./js/noticeAjax.js'></script>	
+	
+						<div class='notice-page'>
+							<ul>
+								<li><div class='PagePrev'><a href='javascript:'  class='PagePrevBt' title='PagePreivew'><img src='img/btn_page_prev.png' alt='Page Preview'></a></div></li>
+								<li>
+									<div class='notice-page-number'>
+										<!-- 페이지 버튼 자동 추가 -->
+										<span><a href='#'>1</a></span>
+										<span><a href='#'>2</a></span>
+										<span><a href='#'>3</a></span>
+										<span><a href='#'>4</a></span>
+									</div>
+								</li>
+								<li><div class='PageNext'><a href='javascript:' class='PageNextBt' title='PageNext'><img src='img/btn_page_next.png' alt='Page Next'></a></div></li>
+							</ul>
+						</div>
+						
+						
+						<div class='notice-search'>
+							<div>
+								<div class='notice-search-left'>
+									<a href='javascript:' class='selectBtn'>제목+내용</a>
+									<div class='notice-search-list'>
+										<ul>
+											<li><a href='javascript:' class='selectOption'>제목+내용</a></li>
+											<li><a href='javascript:' class='selectOption'>제목</a></li>
+											<li><a href='javascript:' class='selectOption'>내용</a></li>
+										</ul>
+									</div>
+								</div>								
+								<div class='notice-search-right'>
+									<input type='text' name='search' id='search' value=''>
+								</div>
+							</div>
+						</div>
+					
+					</div>
+					
+			</div>
+		</section>
+		
+		
+	</main>
+	<footer id='footer'>
+		<div class='footer-row1'>
+		
+		</div>
+		<div class='footer-row2'>
+		
+		</div>
+	</footer>
+	
+	
+
+	
+	
+	
+</div>  
+</body>
+</html>

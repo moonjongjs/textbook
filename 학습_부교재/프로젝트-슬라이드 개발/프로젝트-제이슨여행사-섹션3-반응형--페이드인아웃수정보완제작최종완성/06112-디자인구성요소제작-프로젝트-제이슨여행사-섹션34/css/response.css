@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+
+
+@media all and (max-width:1580px){
+	#main #moripCollection ul li div { margin:15px; }	
+	.wrap .gap { margin:0 15px; }
+
+	#main #mainSlide .mainSlide-container .title { margin-top:-42px;  }
+	#main #mainSlide .mainSlide-container .title h3 { font-size:20px; padding-bottom:6px; }
+	#main #mainSlide .mainSlide-container .title h2 { font-size:58px; }
+	
+}
+
+
+
+@media all and (max-width:1280px){
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right { width:46%; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div { padding-top:10%; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h2 { font-size:22px; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h3 { font-size:15px; padding:10px 0 20px 0; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div p  { font-size:13px; line-height:150%;}
+}
+
+
+@media all and (max-width:1024px){
+	
+	#header ,
+	#header .container { height:84px; }	
+	#header .logo { top:23px; margin-left:-68.5px; width:137px; height:38px; }
+	#header .appBar { padding:33.5px 0; }
+	#header .appBar a > span:first-child { width:27px; height:17px; }
+	#header .appBar a > span:last-child  { display:none; }
+	#header          .appBar a > span i.appBarLine { height:2px; }
+	#header          .appBar a.addAppbar > span i.appBarLine0 { margin-top:-1px; }
+	#header          .appBar a > span i.appBarLine1 {  margin-top:-1px; }
+	#header          .appBar a.addAppbar > span i.appBarLine2 { margin-bottom:-1px; }
+	#header .aside ul {  padding:23.5px 0;  }	
+	#header .aside ul li:first-child { display:none; }
+
+	#header .gnb nav > ul > li > div > a { font-size:17px; padding:0 20px; }
+
+	#header .gnb nav > ul > li > div > .sub > div ul li div { padding:0 3px; }
+	#header .gnb nav > ul > li > div > .sub > div ul li div a { font-size:15px; }
+
+	
+	
+	#main #moripCollection ul li { width:50%; }	
+	#main #moripCollection ul li div { margin:10px; }	
+	.wrap .gap { margin:0 10px; }	
+	
+	#main #mainSlide .mainSlide-container .arrow        ,
+	#main #mainSlide .mainSlide-container .pageBtn-wrap ,
+	#main #mainSlide .mainSlide-container .next         { display:none; }	
+
+	#main #mainSlide .mainSlide-container .title { margin-top:-33px;  }
+	#main #mainSlide .mainSlide-container .title h3 { font-size:15px; padding-bottom:3px; }
+	#main #mainSlide .mainSlide-container .title h2 { font-size:48px; }
+		
+	
+}
+
+
+
+
+@media all and (max-width:900px){ /* 780px 이하이면 */
+	#header ,
+	#header .container { height:60px; }
+	#header .logo { top:18px; margin-left:-43.5px; width:87px; height:24px; }	
+	#header .appBar { padding:21.5px 0; }
+	#header .aside ul {  display:none;  }
+	#header .aside .hotel { display:block; }
+	#header .wrap .gap { margin-right:0; }	
+
+	
+	#header .gnb { top:-5px; height:auto;  }
+	#header .gnb .wrap .gap { margin:0; }	
+	#header .gnb .container { height:auto; }
+
+	#header .gnb nav > ul { display:block; padding:20px 0; }
+	#header .gnb nav > ul > li { display:block; }	
+	#header .gnb nav > ul > li > div { padding:8px 0; }
+	#header .gnb nav > ul > li > div > a { font-size:18px; line-height:100%; padding:0; }
+	#header .gnb nav > ul > li > div > a:hover { color:#fff; background:transparent; }
+
+	#header .gnb nav > ul > li > div > .sub { display:block; position:relative; top:0; left:0; width:100%; height:auto; background:transparent; }
+	#header .gnb nav > ul > li > div > .sub > div { padding:15px 0 0 0; }	
+	#header .gnb nav > ul > li > div > .sub > div ul li { display:block; }	
+	#header .gnb nav > ul > li > div > .sub > div ul li div { padding:3px 0; }
+	#header .gnb nav > ul > li > div > .sub > div ul li div a { font-size:16px; padding-bottom:0; color:#aaa; }
+	#header .gnb nav > ul > li > div > .sub > div ul li div a:hover { color:#fff; }
+	#header .gnb nav > ul > li > div > .sub > div ul li:nth-child(even) { display:none; }
+	
+}
+
+/* 해상도가 780px 이하이면서(그리고 and ), 폰방향이 가로방향 인경우에는 .gnb 높이를 300으로 설정 */
+/* js window.orientation: 90 또는 -90  :가로방향 landscape 랜드스케이프 */
+/* js window.orientation: 0 또는 180  :가로방향 portrait 포트레이트 */
+@media all and (max-width:900px) and (orientation:landscape) {
+	#header .gnb { height:auto;  overflow-y:scroll; }
+}	
+
+
+@media all and (max-width:760px){
+	#main #moripKorea .content { border:2px solid #6f184e; }	
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right { width:48%; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div { padding-top:10%; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h2 { font-size:20px; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h3 { font-size:14px; padding:7px 0 15px 0; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div p  { font-size:12px; line-height:140%;}
+}
+
+@media all and (max-width:600px){
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right { width:48%; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div { padding-top:10%; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h2 { font-size:20px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h3 { font-size:14px; padding:7px 0 15px 0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+	#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div p  { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+}
+
+	
+	
+@media all and (max-width:500px){
+	#main #moripCollection ul li { width:100%; }
+	#main #moripCollection ul li div { margin:5px 0; }	
+	.wrap .gap { margin:0; }		
+	
+	#main #mainSlide .mainSlide-container .title { margin-top:-24px;  }
+	#main #mainSlide .mainSlide-container .title h3 { font-size:11px; padding-bottom:3px; }
+	#main #mainSlide .mainSlide-container .title h2 { font-size:33px; }
+			
+}

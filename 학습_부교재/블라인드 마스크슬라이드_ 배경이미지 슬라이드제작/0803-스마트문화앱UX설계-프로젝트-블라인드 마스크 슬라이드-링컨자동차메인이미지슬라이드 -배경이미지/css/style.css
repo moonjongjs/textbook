@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+#section1 { width:100%; }
+#section1 .slide_container { position:relative; width:1440px; height: 720px; margin:0 auto; }
+#section1 .slide_container .slide_view { z-index: 1; position:relative; width:100%; height: 100%; }
+#section1 .slide_container .slide_view .slide_wrap { position:relative;  width:100%; height: 100%; }
+#section1 .slide_container .slide_view .slide_wrap .slide { z-index: 1; position: absolute; top:0; left:0; width:100%; height: 100%; }
+
+/* 슬라이드 0 */
+#section1 .slide_container .slide_view .slide_wrap .slide0 { z-index: 3; }
+#section1 .slide_container .slide_view .slide_wrap .slide0 .slide_image_wrap { position: relative; width:100%; height: 100%; }
+#section1 .slide_container .slide_view .slide_wrap .slide0 .slide_image_wrap li { position: absolute; top:0; width:25%; height: 100%;  }
+#section1 .slide_container .slide_view .slide_wrap .slide0 .slide_image_wrap li:nth-child(1) { left:calc(25%*0); }
+#section1 .slide_container .slide_view .slide_wrap .slide0 .slide_image_wrap li:nth-child(2) { left:calc(25%*1); }
+#section1 .slide_container .slide_view .slide_wrap .slide0 .slide_image_wrap li:nth-child(3) { left:calc(25%*2); }
+#section1 .slide_container .slide_view .slide_wrap .slide0 .slide_image_wrap li:nth-child(4) { left:calc(25%*3); }
+
+#section1 .slide_container .slide_view .slide_wrap .slide0 .slide_image_wrap li:nth-child(1),
+#section1 .slide_container .slide_view .slide_wrap .slide0 .slide_image_wrap li:nth-child(2),
+#section1 .slide_container .slide_view .slide_wrap .slide0 .slide_image_wrap li:nth-child(3),
+#section1 .slide_container .slide_view .slide_wrap .slide0 .slide_image_wrap li:nth-child(4) {  background: url(../img/slide01.png) no-repeat 231.5px 0 fixed; background-size:1440px auto; }
+
+/* 슬라이드 1 */
+#section1 .slide_container .slide_view .slide_wrap .slide1 { z-index: 2; }
+#section1 .slide_container .slide_view .slide_wrap .slide1 .slide_image_wrap { position: relative; width:100%; height: 100%; }
+#section1 .slide_container .slide_view .slide_wrap .slide1 .slide_image_wrap li { position: absolute; top:0; width:15%; height: 100%;  }
+#section1 .slide_container .slide_view .slide_wrap .slide1 .slide_image_wrap li:nth-child(1) { left:calc(25%*0); }
+#section1 .slide_container .slide_view .slide_wrap .slide1 .slide_image_wrap li:nth-child(2) { left:calc(25%*1); }
+#section1 .slide_container .slide_view .slide_wrap .slide1 .slide_image_wrap li:nth-child(3) { left:calc(25%*2); }
+#section1 .slide_container .slide_view .slide_wrap .slide1 .slide_image_wrap li:nth-child(4) { left:calc(25%*3); }
+
+#section1 .slide_container .slide_view .slide_wrap .slide1 .slide_image_wrap li:nth-child(1),
+#section1 .slide_container .slide_view .slide_wrap .slide1 .slide_image_wrap li:nth-child(2),
+#section1 .slide_container .slide_view .slide_wrap .slide1 .slide_image_wrap li:nth-child(3),
+#section1 .slide_container .slide_view .slide_wrap .slide1 .slide_image_wrap li:nth-child(4) {  background: url(../img/slide02.png) no-repeat 231.5px 0 fixed; background-size:1440px auto;  }
+
+
+
+/* 슬라이드 2 */
+#section1 .slide_container .slide_view .slide_wrap .slide2 { z-index: 1; }
+#section1 .slide_container .slide_view .slide_wrap .slide2 .slide_image_wrap { position: relative; width:100%; height: 100%; }
+#section1 .slide_container .slide_view .slide_wrap .slide2 .slide_image_wrap li { position: absolute; top:0; width:25%; height: 100%;  }
+#section1 .slide_container .slide_view .slide_wrap .slide2 .slide_image_wrap li:nth-child(1) { left:calc(25%*0); }
+#section1 .slide_container .slide_view .slide_wrap .slide2 .slide_image_wrap li:nth-child(2) { left:calc(25%*1); }
+#section1 .slide_container .slide_view .slide_wrap .slide2 .slide_image_wrap li:nth-child(3) { left:calc(25%*2); }
+#section1 .slide_container .slide_view .slide_wrap .slide2 .slide_image_wrap li:nth-child(4) { left:calc(25%*3); }
+
+#section1 .slide_container .slide_view .slide_wrap .slide2 .slide_image_wrap li:nth-child(1),
+#section1 .slide_container .slide_view .slide_wrap .slide2 .slide_image_wrap li:nth-child(2),
+#section1 .slide_container .slide_view .slide_wrap .slide2 .slide_image_wrap li:nth-child(3),
+#section1 .slide_container .slide_view .slide_wrap .slide2 .slide_image_wrap li:nth-child(4) {  background: url(../img/slide03.png) no-repeat 231.5px 0 fixed; background-size:1440px auto;   }
+
+
+
+
+/* 슬라이드 3 */
+#section1 .slide_container .slide_view .slide_wrap .slide3 { z-index: 1; }
+#section1 .slide_container .slide_view .slide_wrap .slide3 .slide_image_wrap { position: relative; width:100%; height: 100%; }
+#section1 .slide_container .slide_view .slide_wrap .slide3 .slide_image_wrap li { position: absolute; top:0; width:25%; height: 100%;  }
+#section1 .slide_container .slide_view .slide_wrap .slide3 .slide_image_wrap li:nth-child(1) { left:calc(25%*0); }
+#section1 .slide_container .slide_view .slide_wrap .slide3 .slide_image_wrap li:nth-child(2) { left:calc(25%*1); }
+#section1 .slide_container .slide_view .slide_wrap .slide3 .slide_image_wrap li:nth-child(3) { left:calc(25%*2); }
+#section1 .slide_container .slide_view .slide_wrap .slide3 .slide_image_wrap li:nth-child(4) { left:calc(25%*3); }
+
+#section1 .slide_container .slide_view .slide_wrap .slide3 .slide_image_wrap li:nth-child(1),
+#section1 .slide_container .slide_view .slide_wrap .slide3 .slide_image_wrap li:nth-child(2),
+#section1 .slide_container .slide_view .slide_wrap .slide3 .slide_image_wrap li:nth-child(3),
+#section1 .slide_container .slide_view .slide_wrap .slide3 .slide_image_wrap li:nth-child(4) {  background: url(../img/slide04.png) no-repeat 231.5px 0 fixed; background-size:1440px auto;   }
+
+
+/* 버튼 */
+span.nextBtn_wrap { z-index: 2; display:block; position: absolute;  top:50%; right:30px; margin-top:-25px; display: block; width:25px; height: 50px; }
+span.nextBtn_wrap a { display: block; width:100%; height: 100%; background: url(../img/btn_right_11.png) no-repeat 0 0; }
+
+span.prevBtn_wrap { z-index: 2; display:block; position: absolute;  top:50%; left:30px; margin-top:-25px; display: block; width:25px; height: 50px; }
+span.prevBtn_wrap a {display: block; width:100%; height: 100%;  background: url(../img/btn_left_11.png) no-repeat 0 0;  }
+
+

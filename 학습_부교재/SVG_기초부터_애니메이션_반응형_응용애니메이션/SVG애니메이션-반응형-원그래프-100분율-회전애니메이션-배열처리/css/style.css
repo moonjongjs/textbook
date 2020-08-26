@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+#section1 { padding:100px 0; }
+#section1 div { width:100%; text-align:center; }
+#section1 div ul { display:inline-block; }
+#section1 div ul li { float:left; width:400px; height:400px; }
+#section1 div ul li div {  position:relative; width:100%;  height:100%; }
+#section1 div ul li div svg { width:100%; height:100%; }
+#section1 div ul li div svg circle         { r:185px; cx:50%; cy:50%; stroke-width:30px; }
+#section1 div ul li div svg circle#circle1 { fill:#fff; stroke:#c55;  }
+#section1 div ul li div svg circle#circle2 { fill:#fff; stroke:#c55;  }
+#section1 div ul li div svg circle#circle3 { fill:#fff; stroke:#c55;  }
+#section1 div ul li div svg circle#circle4 { fill:#fff; stroke:#c55;  }
+#section1 div ul li div span.num { display:block; position:absolute; top:50%; left:0; width:100%; text-align:center; font-size:80px; font-weight:700; color:#000; margin-top:-40px; }

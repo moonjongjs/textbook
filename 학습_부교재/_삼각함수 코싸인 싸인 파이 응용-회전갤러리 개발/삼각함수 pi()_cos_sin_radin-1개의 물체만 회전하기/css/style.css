@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+
+#try { position: relative; border-radius:50%; width:500px;  height: 500px; border:1px solid #ccc; background:#f9f9f9; margin:200px auto; }
+#try span { position: absolute; top:0; left:100%; top:50%; margin-left:-25px; margin-top:-25px; width:50px;  height: 50px; background:#c33; }

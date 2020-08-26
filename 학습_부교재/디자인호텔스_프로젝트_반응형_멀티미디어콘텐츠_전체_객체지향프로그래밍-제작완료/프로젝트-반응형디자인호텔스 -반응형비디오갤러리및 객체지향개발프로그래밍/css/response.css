@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@media all and (max-width:1120px){
+    #header .header_wrap .header_gap { margin: 0; }
+    #header .header_wrap .header_gap .header_container .mobile_wrap { display:block; }
+
+    #header .header_wrap .header_gap .header_container .logo_wrap { display: none; }
+    #header .header_wrap .header_gap .header_container .nav_wrap { display: none; }
+
+
+
+
+    .gallery_wrap > ul > li > div .title_wrap   { cursor: pointer; font-family:'DINWebPro-CondBold';  font-weight: 600; z-index: 3; position: absolute; top:20%; left: 10%; }
+
+
+    #footer .footer_wrap .footer_gap { width:auto; margin: 0 15px; }
+    #footer .footer_wrap .footer_gap .footer_container .sitemap { padding-bottom: 30px; }
+
+    /* 플롯트 해제하고 사이트맵이 행 단위로 배치 */
+    #footer .footer_wrap .footer_gap .footer_container .sitemap > ul > li { float:none; width:100%; border-top:1px solid #3f3f3f; line-height: 40px; }
+    #footer .footer_wrap .footer_gap .footer_container .sitemap > ul > li:last-child { border-bottom:1px solid #3f3f3f; }
+    #footer .footer_wrap .footer_gap .footer_container .sitemap > ul > li > div { margin: 0; padding-top:4px; }
+    /* 사이트맵 데코 바 */
+    #footer .footer_wrap .footer_gap .footer_container .sitemap > ul > li > div span { display: none; }
+    /* 사이트맵 메인메뉴 버튼 */
+    #footer .footer_wrap .footer_gap .footer_container .sitemap > ul > li > div a.footNavBtn { position:relative; }
+    #footer .footer_wrap .footer_gap .footer_container .sitemap > ul > li > div a.footNavBtn i { display: inline-block; position:absolute; top:7.5px; right:0; }
+    
+
+    /* 사이트맵 서브메뉴박스 */
+    #footer .footer_wrap .footer_gap .footer_container .sitemap > ul > li > div .footSub { display: none;  line-height: 100%; }
+
+
+
+    #footer .footer_wrap .footer_gap .footer_container .address ul { margin: 0; text-align: center;}
+    #footer .footer_wrap .footer_gap .footer_container .address ul li:first-child { float: none;  width:100%; }
+    #footer .footer_wrap .footer_gap .footer_container .address ul li:first-child address { line-height: 100%;  }
+    
+    #footer .footer_wrap .footer_gap .footer_container .address ul li:last-child  { float: none; width:100%; text-align: center; padding-top: 15px; }
+    #footer .footer_wrap .footer_gap .footer_container .address ul li:last-child div { padding-right: 0;}
+    #footer .footer_wrap .footer_gap .footer_container .address ul li:last-child div span { margin:0 5px 0 5px; }
+
+    
+}
+
+@media all and (max-width:1114px){
+
+
+
+    #main  #mainVideo_section > div .mainVideoControl_wrap .gap { margin:0; }
+
+    #main  #experiences_section > div .left_wrap  { float:none; width:100%; }    
+    #main  #experiences_section > div .right_wrap { float:none; width:100%; }    
+
+
+}
+
+
+@media all and (max-width:800px){
+    #main  #experiences_section > div .right_wrap > div .right_text_wrap p,    
+    #main  #experiences_section > div .left_wrap > div .left_text_wrap  p {  line-height: 170%; } 
+}
+
+
+@media all and (max-width:600px){
+    #videoGallery_section > div .galleryBtn_wrap ul li a { font-size:13px; padding:0 5px; }
+}
+
+
+@media all and (max-width:500px){
+
+    #main  #experiences_section > div .left_wrap > div ,
+    #main  #experiences_section > div .right_wrap > div { padding: 5%  6%; }
+
+    #main  #experiences_section > div .left_wrap > div .left_text_wrap  div ,
+    #main  #experiences_section > div .right_wrap > div .right_text_wrap div { padding-bottom: 2.5%; }
+
+    #main  #experiences_section > div .left_wrap > div .left_text_wrap  div h2 ,
+    #main  #experiences_section > div .right_wrap > div .right_text_wrap div h2 { font-size:17px;  }
+    
+    #main  #experiences_section > div .right_wrap > div .right_text_wrap p ,    
+    #main  #experiences_section > div .left_wrap > div .left_text_wrap  p {  line-height: 150%; } 
+
+    #videoGallery_section > div .galleryBtn_wrap { height: auto; }
+    #videoGallery_section > div .galleryBtn_wrap ul { display: block;  }
+    #videoGallery_section > div .galleryBtn_wrap ul li { display: block;  line-height: 100%; }
+    #videoGallery_section > div .galleryBtn_wrap ul li a { display: block; line-height: 40px; padding:0; }
+    #videoGallery_section > div .galleryBtn_wrap ul li a:focus { outline:0; background-color: none; }
+
+
+}
+
+@media all and (max-width:400px){
+    #videoGallery_section > div .galleryBtn_wrap ul li a { font-size:11px; padding:0 2px; }
+}

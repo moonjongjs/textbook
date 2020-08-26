@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>더페이스샵 AJAX 공지사항</title>
+	<meta charset='utf-8'>
+	<meta name='Viewport'    content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0'>
+	<meta name='Title'       content='더페이스샵 AJAX 공지사항'>
+	<meta name='Subject'     content='더페이스샵 AJAX 공지사항'>
+	<meta name='format-detection' content='telephone=no'>	
+	<meta name='Publisher'   content='교사문선종'>
+	<meta name='Keywords'    content='더페이스샵 AJAX 공지사항 인트로사이트'>
+	<meta name='Description' content='더페이스샵 AJAX 공지사항 웹표준, 웹접근, 크로스브라우징, 반응형웹사이트'>
+	<meta name='Author'      content='BRANDO'>
+	<meta name='Author-Date' content='2020-07-23'>
+	<meta name='Copyright'   content='더페이스샵 AJAX 공지사항'>
+	<meta name='Robots'      content='index,follow'>
+	
+	
+	<link rel='stylesheet' type='text/css' href='./css/reset.css'>
+	<link rel='stylesheet' type='text/css' href='./css/fonts.css'>
+	<link rel='stylesheet' type='text/css' href='./css/style.css'>
+	<link rel='stylesheet' type='text/css' href='./css/response.css'>
+	
+	
+	<script src='./js/lib/jquery-1.12.4.min.js'></script>
+	<script src='./js/lib/jquery.easing.1.3.js'></script>
+	<script src='./js/lib/jquery.touchSwipe.js'></script>
+	<!-- <script src='./js/lib/prefixfree.min.js'></script> -->
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 
+	 
+	 
+</head>
+<body>
+<div id='wrap'>
+	
+	<ul id='skip'>
+		<li><a href='#header'>메뉴바로가기</a></li>
+		<li><a href='#footer'>하단바로가기</a></li>
+	</ul>
+	
+	
+	<header id='header'>
+		<div>
+			<h1><img src='./img/logo_nc2.png' alt=''></h1>
+		</div>
+	</header>
+	<main id='main'>
+		
+		<section id='notice'>
+			<div>
+				<div class='title'>
+					<h2><img src='./img/tit_notice.png' alt=''></h2>	
+				</div>
+
+				<div class='title-underline'>
+					<p></p>					
+				</div>				
+
+				<div class='noticeBtn-wrap'>
+					<div class='clearfix'>
+						<span><a href='javascript:' class='noticeBtn addTab'>전체공지</a></span>
+						<span><a href='javascript:' class='noticeBtn'>쇼핑공지</a></span>
+						<span><a href='javascript:' class='noticeBtn'>브랜드소식</a></span>
+					</div>
+				</div>
+
+				<!-- 게시판 시작 -->
+				<div class='notice-board'>
+					<ul>
+						<li class='clearfix'>
+							<span>번호</span>
+							<span>구분</span>
+							<span>제목</span>
+							<span>날짜</span>
+						</li>
+						<li>
+
+							<ul class='ajaxBinding'>
+
+								<!-- AJAX 정보 바인딩 -->
+
+							</ul>
+
+						</li>
+					</ul>
+				</div>
+
+
+				<div class='notice-page'>
+					<ul>
+						<li><div><a href='javascript:' class='pagePrevBtn'><img src='./img/btn_page_prev.png'></a></div></li>							
+						<li class='pageBtn-wrap'>
+							
+							<!-- 페이지번호 바인딩 -->
+
+						</li>
+						<li><div><a href='javascript:' class='pageNextBtn'><img src='./img/btn_page_next.png'></a></div></li>
+					</ul>
+				</div>
+
+
+
+				<div class='notice-search'>
+					<div>
+						<div class='notice-search-left'>
+							<a href='javascript:' class='searchBtn addSearchOn'>제목+내용</a>
+							<div class='notice-search-list'>
+								<ul>
+									<li><a href='javascript:' class='searchListBtn'>제목+내용</a></li>
+									<li><a href='javascript:' class='searchListBtn'>제목</a></li>
+									<li><a href='javascript:' class='searchListBtn'>내용</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class='notice-search-right'>
+							<div>
+								<input type='text' name='search' id='search' value=''>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer id='footer'>
+
+
+
+	</footer>
+	<!-- 정렬 내림차순(Descending) 나열형 -->
+	<!-- <script src='./js/faceNoticeAJAX.js'></script> -->
+	<!-- 정렬 내림차순(Descending) 간결형 -->
+	<!-- <script src='./js/faceNotice_AJAX_ARRAY_SORT.js'></script> -->
+	<script src='./js/faceNotice_AJAX_ARRAY_SORT_function.js'></script>
+	
+	
+</div>  
+</body>
+</html>

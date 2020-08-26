@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+
+#triangleGallery { position: relative; border-radius:50%; width:600px;  height: 600px; border:1px solid #ccc; background:url(../img/restaurant-img21.jpg) no-repeat 50% 50%; background-size: cover; margin:200px auto; }
+#triangleGallery .img { border-radius:50%; overflow: hidden; position: absolute;  margin-left:-50px; margin-top:-50px; width:100px;  height: 100px; border:1px solid #aaa; box-sizing:border-box;  }
+#triangleGallery .img00 { left:600px; top:300px;         background:url(../img/restaurant-img37.jpg) no-repeat 50% 50%; background-size: cover; }
+#triangleGallery .img01 { left:559.8076211px; top:450px; background:url(../img/restaurant-img38.jpg) no-repeat 50% 50%; background-size: cover; }
+#triangleGallery .img02 { left:450px; top:559.8076211px; background:url(../img/restaurant-img39.jpg) no-repeat 50% 50%; background-size: cover; }
+#triangleGallery .img03 { left:300px; top:600px;         background:url(../img/restaurant-img20.jpg) no-repeat 50% 50%; background-size: cover; }
+#triangleGallery .img04 { left:150px; top:559.8076211px; background:url(../img/restaurant-img21.jpg) no-repeat 50% 50%; background-size: cover; }
+#triangleGallery .img05 { left:40.19237886px; top:450px; background:url(../img/restaurant-img22.jpg) no-repeat 50% 50%; background-size: cover; }
+#triangleGallery .img06 { left:0px; top:300px;           background:url(../img/restaurant-img23.jpg) no-repeat 50% 50%; background-size: cover; }
+#triangleGallery .img07 { left:40.19237886px; top:150px; background:url(../img/restaurant-img31.jpg) no-repeat 50% 50%; background-size: cover; }
+#triangleGallery .img08 { left:150px; top:40.19237886px; background:url(../img/blog-post-img4.jpg) no-repeat 50% 50%; background-size: cover; }
+#triangleGallery .img09 { left:300px; top:0px;           background:url(../img/blog-post-img5.jpg) no-repeat 50% 50%; background-size: cover; }
+#triangleGallery .img10 { left:450px; top:40.19237886px; background:url(../img/blog-post-img6.jpg) no-repeat 50% 50%; background-size: cover; }
+#triangleGallery .img11 { left:559.8076211px; top:150px; background:url(../img/blog-post-img7.jpg) no-repeat 50% 50%; background-size: cover; }
+
+.nextBtn_wrap { position: absolute; top:500px; left:50%; margin-left:500px; width:auto; height: 100px; margin-top:-50px;  }
+.nextBtn_wrap img { height:100%; }
+
+.prevBtn_wrap { position: absolute; top:500px; right:50%; margin-right:500px; width:auto; height: 100px; margin-top:-50px;  }
+.prevBtn_wrap img { height:100%; }

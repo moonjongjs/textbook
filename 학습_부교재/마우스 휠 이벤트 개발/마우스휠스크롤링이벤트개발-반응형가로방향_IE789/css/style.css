@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+#wrap { width:1000%; }
+.section  { float:left; color:#fff; font-size:150px; text-align:center; width:1903px; height:969px; line-height:969px; }
+#section01 { background:#C99; }
+#section02 { background:#CC9; }
+#section03 { background:#C9C; }
+#section04 { background:#9CC; }
+#section05 { background:#9C9; }
+#section06 { background:#C99; }
+#section07 { background:#CC9; }
+#section08 { background:#C9C; }
+#section09 { background:#9CC; }
+#section10 { background:#9C9; }

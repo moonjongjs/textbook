@@ -1,0 +1,324 @@
+C:\Users\TJ>mysql -u root -p
+Enter password: *******
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 9
+Server version: 10.3.8-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| member             |
+| mysql              |
+| performance_schema |
++--------------------+
+4 rows in set (0.023 sec)
+
+MariaDB [(none)]> use member;
+Database changed
+MariaDB [member]> show tables;
++------------------+
+| Tables_in_member |
++------------------+
+| notice           |
++------------------+
+1 row in set (0.000 sec)
+
+
+//////////////////////////////////////////////////////////////////////
+//테이이블 구조 보기
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> describe notice;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| idx      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| wclass   | varchar(10)  | NO   |     | NULL    |                |
+| wsubject | varchar(250) | NO   |     | NULL    |                |
+| wdate    | date         | YES  |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+4 rows in set (0.029 sec)
+
+
+
+//////////////////////////////////////////////////////////////////////
+//테이이블 내용 보기
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> select * from notice;
+Empty set (0.001 sec)
+
+
+
+//////////////////////////////////////////////////////////////////////
+//테이이블 필드 삭제하기
+//alter table notice drop idx;
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> alter table notice drop idx;
+Query OK, 0 rows affected, 2 warnings (0.683 sec)
+Records: 0  Duplicates: 0  Warnings: 2
+
+
+
+//////////////////////////////////////////////////////////////////////
+//삭제 후 테이이블 구조 보기
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> desc notice;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| wclass   | varchar(10)  | NO   |     | NULL    |       |
+| wsubject | varchar(250) | NO   |     | NULL    |       |
+| wdate    | date         | YES  |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+3 rows in set (0.007 sec)
+
+
+
+//////////////////////////////////////////////////////////////////////
+//Primary key 추가 
+//alter table notice add primary key(idx);
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> alter table notice add primary key(idx);
+Query OK, 0 rows affected (0.433 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+
+//////////////////////////////////////////////////////////////////////
+//Primary key 추가 후 확인 
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> desc notice;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| wclass   | varchar(10)  | NO   |     | NULL    |       |
+| wsubject | varchar(250) | NO   |     | NULL    |       |
+| wdate    | date         | YES  |     | NULL    |       |
+| idx      | int(11)      | NO   | PRI | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+4 rows in set (0.006 sec)
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//Primary key 추가 후  자동 증가번호(auto_increment) 추가
+//alter table notice modify idx int not null auto_increment;
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> alter table notice modify idx int not null auto_increment;
+Query OK, 0 rows affected, 2 warnings (0.528 sec)
+Records: 0  Duplicates: 0  Warnings: 2
+
+
+
+//////////////////////////////////////////////////////////////////////
+//자동 증가번호(auto_increment) 추가 후 확인
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> desc notice;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| wclass   | varchar(10)  | NO   |     | NULL    |                |
+| wsubject | varchar(250) | NO   |     | NULL    |                |
+| wdate    | date         | YES  |     | NULL    |                |
+| idx      | int(11)      | NO   | PRI | NULL    | auto_increment |
++----------+--------------+------+-----+---------+----------------+
+4 rows in set (0.007 sec)
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//필드 위치 바꾸기 idx 맨위로
+//alter table notice modify idx int not null auto_increment first;
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> alter table notice modify idx int not null auto_increment first;
+Query OK, 0 rows affected (0.348 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+
+//////////////////////////////////////////////////////////////////////
+//필드 위치 바꾸기 idx 맨위로 이동 후 확인
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> desc notice;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| idx      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| wclass   | varchar(10)  | NO   |     | NULL    |                |
+| wsubject | varchar(250) | NO   |     | NULL    |                |
+| wdate    | date         | YES  |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+4 rows in set (0.005 sec)
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//필드 위치 바꾸기 wclass 맨 아래로 이동
+//alter table notice modify wclass varchar(10) not null after wdate;
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> alter table notice modify wclass varchar(10) not null after wdate;
+Query OK, 0 rows affected (0.350 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//필드 위치 바꾸기 wclass 맨 아래로 이동 후 확인
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> desc notice;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| idx      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| wsubject | varchar(250) | NO   |     | NULL    |                |
+| wdate    | date         | YES  |     | NULL    |                |
+| wclass   | varchar(10)  | NO   |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+4 rows in set (0.006 sec)
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//필드 위치 바꾸기 wdate 위에서 두번째 위치로 이동
+//alter table notice modify wdate date after idx;
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> alter table notice modify wdate date after idx;
+Query OK, 0 rows affected (0.428 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//필드 위치 바꾸기 wdate 위에서 두번째 위치로 이동 후 확인
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> desc notice;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| idx      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| wdate    | date         | YES  |     | NULL    |                |
+| wsubject | varchar(250) | NO   |     | NULL    |                |
+| wclass   | varchar(10)  | NO   |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+4 rows in set (0.006 sec)
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//Primary key 삭제
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> alter table notice drop primary key;
+Query OK, 0 rows affected, 1 warning (0.566 sec)
+Records: 0  Duplicates: 0  Warnings: 1
+
+MariaDB [member]> desc notice;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| idx      | int(11)      | NO   |     | NULL    |       |
+| wclass   | varchar(10)  | NO   |     | NULL    |       |
+| wsubject | varchar(250) | NO   |     | NULL    |       |
+| wdate    | date         | YES  |     | NULL    |       |
+| wname    | varchar(50)  | NO   |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+5 rows in set (0.007 sec)
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//auto_increment 추가
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> alter table notice modify idx int not null auto_increment;
+Query OK, 0 rows affected, 2 warnings (0.458 sec)
+Records: 0  Duplicates: 0  Warnings: 2
+
+MariaDB [member]> desc notice;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| idx      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| wclass   | varchar(10)  | NO   |     | NULL    |                |
+| wsubject | varchar(250) | NO   |     | NULL    |                |
+| wdate    | date         | YES  |     | NULL    |                |
+| wname    | varchar(50)  | NO   |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+5 rows in set (0.007 sec)
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//Primary key 추가
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> alter table notice add primary key(idx);
+Query OK, 0 rows affected (0.344 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+MariaDB [member]> desc notice;
++----------+--------------+------+-----+---------+-------+
+| Field    | Type         | Null | Key | Default | Extra |
++----------+--------------+------+-----+---------+-------+
+| idx      | int(11)      | NO   | PRI | NULL    |       |
+| wclass   | varchar(10)  | NO   |     | NULL    |       |
+| wsubject | varchar(250) | NO   |     | NULL    |       |
+| wdate    | date         | YES  |     | NULL    |       |
+| wname    | varchar(50)  | NO   |     | NULL    |       |
++----------+--------------+------+-----+---------+-------+
+5 rows in set (0.005 sec)
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//필드 이름 변경 
+//alter table notice change wname name varchar(100) not null;
+//////////////////////////////////////////////////////////////////////
+
+MariaDB [member]> alter table notice change wname name varchar(100) not null;
+Query OK, 0 rows affected, 2 warnings (0.536 sec)
+Records: 0  Duplicates: 0  Warnings: 2
+
+MariaDB [member]> desc notice;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| idx      | int(11)      | NO   | PRI | NULL    | auto_increment |
+| wclass   | varchar(10)  | NO   |     | NULL    |                |
+| wsubject | varchar(250) | NO   |     | NULL    |                |
+| wdate    | date         | YES  |     | NULL    |                |
+| name     | varchar(100) | NO   |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+5 rows in set (0.008 sec)
+
+MariaDB [member]>
+

@@ -1,0 +1,34 @@
+@charset "utf-8";
+@import url(reset.css);
+
+#wrap { width:100%; }
+#wrap .main-slide-container { position:relative; width:100%; }
+#wrap .main-slide-container .main-slide-view { z-index:1; position:relative; width:100%; max-width:1900px; margin:0 auto; overflow:hidden; }
+#wrap .main-slide-container .main-slide-view .main-slide-wrap { position:relative; left:0; width:9500px; margin-left:-1900px; }
+#wrap .main-slide-container .main-slide-view .main-slide-wrap .slide { float:left; width:1900px; }
+#wrap .main-slide-container .main-slide-view .main-slide-wrap .slide div { width:100%; }
+#wrap .main-slide-container .main-slide-view .main-slide-wrap .slide div img { width:100%; }
+
+/* 이전 다음 화살버튼 */
+/* 이전 */
+#wrap .main-slide-container .main-slide-prevBtn-wrap { z-index:2; position:absolute; top:50%; left:50%; margin-left:-490px; width:25px; height:50px; margin-top:-25px; }
+#wrap .main-slide-container .main-slide-prevBtn-wrap a { display:inline-block; }
+#wrap .main-slide-container .main-slide-prevBtn-wrap a img { width:auto; }
+/* 다음 */
+#wrap .main-slide-container .main-slide-nextBtn-wrap { z-index:2; position:absolute; top:50%; right:50%; margin-right:-490px; width:25px; height:50px; margin-top:-25px; }
+#wrap .main-slide-container .main-slide-nextBtn-wrap a {display:inline-block; }
+#wrap .main-slide-container .main-slide-nextBtn-wrap a img { width:auto; }
+
+
+/* 페이지 버튼 */
+#wrap .main-slide-container .main-slide-pageBtn-wrap { z-index:2; position:absolute; bottom:10%; left:0; width:100%; height:40px; text-align:center; }
+#wrap .main-slide-container .main-slide-pageBtn-wrap li { display:inline-block; margin:0 4px; }
+#wrap .main-slide-container .main-slide-pageBtn-wrap li a { display:inline-block; }
+#wrap .main-slide-container .main-slide-pageBtn-wrap li a img { width:auto; }
+
+
+
+
+
+
+

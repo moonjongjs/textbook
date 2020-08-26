@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+
+/* 전체 공통 스타일 콘텐츠 너비와 여백 콘테이너 */
+.wrap { width:100%; max-width:1580px; margin:0 auto; }
+.wrap .gap { margin:0 25px; }
+.wrap .gap .container{ width:100%; }
+
+/* 타이틀 공용 스타일 */
+.content-title { padding:60px 0; text-align:center; }
+.content-title h2 { font-size:33px; color:#6f184e; }
+.content-title h3 { padding-top:10px; }
+.content-title h3 i { display:inline-block; width:110px; height:1px; background:#ccc; }
+.content-title h4 { padding-top:15px; font-size:14px; color:#777;  }
+
+
+
+
+
+
+#header { z-index:3; position:fixed; top:0; left:0; width:100%; height:125px; background:transparent; }
+#header.addFixed { box-shadow:0 3px 10px rgba(0,0,0, .25);  }
+#header          .header-row1 { z-index:2; position:relative;  background:transparent; transition:all 0.5s; }
+#header.addFixed .header-row1 { background:#fff; }
+#header          .container   { height:125px; }
+
+#header          .logo { position:absolute; top:34.5px; left:50%; margin-left:-101px; width:202px; height:56px; }
+#header          .logo a { display:inline-block; }
+#header          .logo a img { width:100%; }
+#header          .logo a img:first-child { display:none; }
+#header.addFixed .logo a img:first-child { display:block; }
+#header          .logo a img:last-child { display:block; }
+#header.addFixed .logo a img:last-child { display:none; }
+
+#header          .appBar { float:left; padding:54px 0; }
+#header          .appBar a { display:inline-block; }
+#header          .appBar a > span:first-child { overflow:hidden; position:relative; width:18px; height:13px; display:inline-block; }
+#header          .appBar a > span:last-child  { display:inline-block; }
+#header          .appBar a > span i.appBarLine { position:absolute; left:0; display:block; width:100%; height:1px; background:#fff; }
+#header.addFixed .appBar a > span i.appBarLine { background:#000; transition:all .5s; }
+#header          .appBar a > span i.appBarLine0 { top:0; }
+#header          .appBar a.addAppbar > span i.appBarLine0 { top:50%; margin-top:-0.5px; transform:rotate(135deg); }
+#header          .appBar a > span i.appBarLine1 { top:50%; margin-top:-0.5px; }
+#header          .appBar a.addAppbar > span i.appBarLine1 { left:100%; }
+#header          .appBar a > span i.appBarLine2 { bottom:0; }
+#header          .appBar a.addAppbar > span i.appBarLine2 { bottom:50%; margin-bottom:-0.5px; transform:rotate(-135deg); }
+#header          .appBar a > span span { margin-left:5px; margin-top:-3px;  display:block; font-size:17px; font-weight:500; color:#fff; }
+#header.addFixed .appBar a > span span { color:#000; }
+
+
+#header          .aside { float:right; }
+#header          .aside ul {  padding:44px 0;  }
+#header          .aside ul li { display:inline-block; margin-left:10px; }
+#header          .aside ul li div { width:100%; }
+#header          .aside ul li div a { font-size:14px; color:#fff; font-weight:500; }
+#header.addFixed .aside ul li div a { color:#222; }
+#header          .aside ul li:last-child div a { display:block; color:#fff; padding:10px 25px 13px 25px; background:rgba(111,24,78,.9); }
+#header.addFixed .aside ul li:last-child div a { background:#222; }
+#header          .aside ul li:last-child div a span { position:relative; display:inline-block; margin-left:10px; }
+#header          .aside ul li:last-child div a span i { position:absolute; top:50%; left:0; display:block; font-size:18px; margin-top:-11px; }
+
+#header          .aside .hotel { display:none; width:60px; height:60px; }
+#header          .aside .hotel a { display:block; color:#fff; background:#6f184e; text-align:center; }
+#header          .aside .hotel a span { display:block; padding:14px 0; font-size:11px; line-height:16.5px; }
+
+
+/* GNB */
+#header .gnb { display:none; z-index:1; position:relative; top:-78px; width:100%; height:77px; background:#6f184e; border-top:1px solid #6f184e; }
+#header .gnb nav { text-align:center;  }
+#header .gnb nav > ul { display:inline-block; text-align:center; }
+#header .gnb nav > ul > li { display:inline-block; }
+#header .gnb nav > ul > li > div { width:auto; }
+#header .gnb nav > ul > li > div > a { color:#fff; font-size:18px; font-weight:700; display:block; line-height:77px; padding:0 30px; }
+#header .gnb nav > ul > li > div > a:hover { color:#222; background:#fff; }
+
+/* LNB(SUB) */
+#header .gnb nav > ul > li > div > .sub { display:none; position:absolute; top:77px; left:0; width:100%; height:77px; background:#fff; }
+#header .gnb nav > ul > li > div > .sub > div { padding:30.5px 0; }
+#header .gnb nav > ul > li > div > .sub > div ul { text-align:center; }
+#header .gnb nav > ul > li > div > .sub > div ul li { display:inline-block; }
+#header .gnb nav > ul > li > div > .sub > div ul li div { padding:0 8px; }
+#header .gnb nav > ul > li > div > .sub > div ul li div a { font-size:16px; display:block; padding-bottom:3px; border-bottom:1px solid transparent; color:#666; }
+#header .gnb nav > ul > li > div > .sub > div ul li div a:hover { border-bottom:1px solid #6f184e; color:#6f184e; }
+#header .gnb nav > ul > li > div > .sub > div ul li div i { margin-top:2px; display:block; width:1px; height:12px; background:#ccc; }
+
+
+
+#main { z-index:1; position:relative; }
+
+/* 섹션1 메인슬라이드 */
+#main #mainSlide {  z-index:1; position:fixed; top:0; left:0; width:100%; }
+#main #mainSlide .mainSlide-container { position:relative; width:100%; }
+#main #mainSlide .mainSlide-container .mainSlide-view { z-index:1; position:relative; width:100%; }
+#main #mainSlide .mainSlide-container .mainSlide-view .mainSlide-wrap { position:relative; width:500%; margin-left:-100%; }
+/* 메인슬라이드 슬라이드 */
+#main #mainSlide .mainSlide-container .mainSlide-view .mainSlide-wrap .slide  { float:left; width:1903px; height:969px; /* js win Width Height */ } 
+#main #mainSlide .mainSlide-container .mainSlide-view .mainSlide-wrap .slide0 { background:url(../img/mainSlide0.jpg) no-repeat 50% 0; background-size:cover; } 
+#main #mainSlide .mainSlide-container .mainSlide-view .mainSlide-wrap .slide1 { background:url(../img/mainSlide1.jpg) no-repeat 50% 0; background-size:cover; } 
+#main #mainSlide .mainSlide-container .mainSlide-view .mainSlide-wrap .slide2 { background:url(../img/mainSlide2.jpg) no-repeat 50% 0; background-size:cover; } 
+
+/* 메인슬라이드 타이틀 */
+#main #mainSlide .mainSlide-container .title { z-index:2; position:absolute; top:50%; left:0; width:100%; text-align:center;  margin-top:-51px;  }
+#main #mainSlide .mainSlide-container .title h3 { font-size:24px; color:#fff; font-weight:600; padding-bottom:10px; }
+#main #mainSlide .mainSlide-container .title h2 { font-size:68px; color:#fff; font-weight:700; }
+
+/* 메인슬라이드 이전 다음 화살버튼 */
+#main #mainSlide .mainSlide-container .arrow { z-index:2; position:absolute; left:9.8003153%; width:80.3993694%; /*1530px*/ height:100px; top:50%; margin-top:-50px; }
+#main #mainSlide .mainSlide-container .arrow .PrevBtn-wrap { float:left; display:block; width:52px; height:100px; }
+#main #mainSlide .mainSlide-container .arrow .PrevBtn-wrap a { display:block; }
+#main #mainSlide .mainSlide-container .arrow .PrevBtn-wrap a img { width:52px; }
+#main #mainSlide .mainSlide-container .arrow .NextBtn-wrap { float:right; width:52px; height:100px; }
+#main #mainSlide .mainSlide-container .arrow .NextBtn-wrap a { display:block; display:block; }
+#main #mainSlide .mainSlide-container .arrow .NextBtn-wrap a img { width:52px; }
+
+/* 메인슬라이드 페이지버튼 */
+#main #mainSlide .mainSlide-container .pageBtn-wrap { z-index:2; position:absolute; left:0; bottom:13%; width:100%; text-align:center; height:12px; }
+#main #mainSlide .mainSlide-container .pageBtn-wrap li { display:inline-block; width:12px; height:12px; margin:0 6px; }
+#main #mainSlide .mainSlide-container .pageBtn-wrap li a { display:block; width:12px; height:12px; border-radius:50%; background:rgba(255,255,255, .8); }
+#main #mainSlide .mainSlide-container .pageBtn-wrap li a.addPage { background:#6f184e; }
+
+/* 메인슬라이드 다음섹션이동 버튼 */
+#main #mainSlide .mainSlide-container .next { z-index:2; position:absolute; left:0; bottom:3%; width:100%; text-align:center; }
+#main #mainSlide .mainSlide-container .next a { display:inline-block; }
+#main #mainSlide .mainSlide-container .next a span { display:inline-block;  font-size:13px; color:#fff; }
+#main #mainSlide .mainSlide-container .next a span img { width:35px; padding-top:15px; }
+
+
+
+/* 섹션2 morip Collection */
+#main #moripCollection { z-index:2; margin-top:969px;/* js 창높이 */  position:relative; width:100%; padding:60px 0; background:#fff; }
+#main #moripCollection .wrap .gap { margin:0; }
+#main #moripCollection ul { width:100%; }
+#main #moripCollection ul li { float:left; width:33.333%; }
+#main #moripCollection ul li div { margin:25px; }
+#main #moripCollection ul li div a { position:relative; display:block; }
+#main #moripCollection ul li div a > img  { z-index:1; position:relative; width:100%; }
+#main #moripCollection ul li div a   span { z-index:2; display:block; position:absolute; top:0; left:0; width:100%; height:100%; transition:all 0.3s; }
+#main #moripCollection ul li:nth-child(1) div a   span { background:url(../img/collection_logo1.png) no-repeat 50% 50%; background-size:56.6446242% auto; }
+#main #moripCollection ul li:nth-child(2) div a   span { background:url(../img/collection_logo2.png) no-repeat 50% 50%; background-size:62.7286764% auto; }
+#main #moripCollection ul li:nth-child(3) div a   span { background:url(../img/collection_logo3.png) no-repeat 50% 50%; background-size:48.252828%  auto; }
+#main #moripCollection ul li:nth-child(4) div a   span { background:url(../img/collection_logo4.png) no-repeat 50% 50%; background-size:40.2806217% auto; }
+#main #moripCollection ul li:nth-child(5) div a   span { background:url(../img/collection_logo5.png) no-repeat 50% 50%; background-size:51.1899567% auto; }
+#main #moripCollection ul li:nth-child(6) div a   span { background:url(../img/collection_logo6.png) no-repeat 50% 50%; background-size:29.1614917% auto; }
+#main #moripCollection ul li div a:hover   span { background-color:rgba(111,24,78, .9); }
+
+
+
+/* 섹션3 */
+/* morip Korea */
+#main #moripKorea { z-index:2; position:relative; width:100%; padding:60px 0; background:#fff; }
+#main #moripKorea .container{ position:relative; }
+#main #moripKorea .content-title { padding-bottom:120px; }
+#main #moripKorea .content-title h2 { color:#222; }
+
+#main #moripKorea .content { z-index:1; position:relative; width:auto; height:560px; border:4px solid #6f184e; }
+#main #moripKorea .content .s3Slide-container { width:100%; max-width:1360px; height:100%; margin:0 auto; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view { position:relative; width:88.2352941%; height:100%; margin:0 auto; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap { z-index:1; position:relative; width:100%; height:100%; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li.s3Slide  { z-index:1; position:absolute; top:0; left:0; width:100%; height:100%; background:#fff; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li.s3Slide0 { z-index:3; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li.s3Slide1 { z-index:2; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li.s3Slide2 { z-index:1; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div { position:relative; width:100%; height:100%; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li.s3Slide  > div .s3Slide-left  { position:absolute; top:-10.7142857%; left:0;  width:46.6666667%; height:100%; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li.s3Slide0 > div .s3Slide-left  { background:url(../img/slide0.jpg) no-repeat 50% 50%; background-size:cover; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li.s3Slide1 > div .s3Slide-left  { background:url(../img/slide1.jpg) no-repeat 50% 50%; background-size:cover; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li.s3Slide2 > div .s3Slide-left  { background:url(../img/slide2.jpg) no-repeat 50% 50%; background-size:cover; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right { position:absolute; top:0; right:0; width:41.6666667%; height:100%; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div { padding-top:16%; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h2 { font-size:24px; font-weight:600; color:#6f184e;  }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div h3 { font-size:16px; color:#222; padding:15px 0 30px 0; }
+#main #moripKorea .content .s3Slide-container .s3Slide-view .s3Slide-wrap li > div .s3Slide-right div p  { font-size:14px; color:#666; line-height:180%;}
+
+/* 페이지 이미지 버튼 */
+#main #moripKorea .pageImageBtn-wrap { z-index:2; position:absolute; bottom:-4.9689441%; left:44%; width:33.4640523%; height:216px; } 
+#main #moripKorea .pageImageBtn-wrap li { float:left; width:50%; height:100%; }  /* 50% 너비 256 100%높이 216 */
+#main #moripKorea .pageImageBtn-wrap li > div { margin:0 7.8125%; height:100%; } /* 50% 너비 256 마진 20 비율 7.8125% */ 
+#main #moripKorea .pageImageBtn-wrap li > div div { width:100%; height:100% } 
+#main #moripKorea .pageImageBtn-wrap li:nth-child(1) > div div { background:url(../img/slide1.jpg) no-repeat 50% 50%; background-size:cover; } 
+#main #moripKorea .pageImageBtn-wrap li:nth-child(2) > div div { background:url(../img/slide2.jpg) no-repeat 50% 50%; background-size:cover; } 
+
+
+#main #moripKorea .arrow { z-index:2; position:absolute;  bottom:0; right:0; width:82px; height:41px; } 
+#main #moripKorea .arrowBtn-wrap { width:100%; } 
+#main #moripKorea .arrowBtn-wrap li {  float:left; width:50%; } 
+#main #moripKorea .arrowBtn-wrap li div { width:100%; } 
+#main #moripKorea .arrowBtn-wrap li div a { display:block; text-align:center; width:100%; line-height:41px; background:#6f184e; } 
+#main #moripKorea .arrowBtn-wrap li:nth-child(1) div a i { display:inline-block; margin-left:5.5px;  width:11px; height:11px; border:1px solid #fff; border-right:0; border-bottom:0; transform:rotate(-45deg); } 
+#main #moripKorea .arrowBtn-wrap li:nth-child(2) div a i { display:inline-block; margin-right:5.5px; width:11px; height:11px; border:1px solid #fff; border-left:0;  border-bottom:0; transform:rotate( 45deg); } 
+
+
+
+
+
+
+
+/* 섹션4 */
+/* Travel Lounge */
+#main #TravelLounge { z-index:2; position:relative; width:100%; padding:60px 0; background:#f6f6f6; }
+#main #TravelLounge .content-title h2 { color:#222; }
+
+
+
+
+
+
+
+/* footer */
+#footer { z-index:2; position:relative;  width:100%; }
+#footer .row1 { width:100%; height:125px; background:#fff; }
+#footer .row2 { width:100%; padding:80px 0; background:#303030; }
+
+
+
+
